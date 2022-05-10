@@ -14,3 +14,14 @@
 
 # Links
 This is my [website](https://lamld203844.github.io/)
+
+# Lists
+
+## Unordered list
+- Item 1
+- Item 2
+- Item 3
+## Ordered list
+* Item 1
+* Item 2
+* Item 3
