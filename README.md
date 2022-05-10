@@ -17,11 +17,15 @@ This is my [website](https://lamld203844.github.io/)
 
 # Lists
 
-## Unordered list
+## Unordered list, we use "*" or "-" at the beginning of lines
 - Item 1
 - Item 2
 - Item 3
-## Ordered list
+
 * Item 1
 * Item 2
 * Item 3
+## Ordered list
+1. Foo
+2. Baz
+3. Hi
