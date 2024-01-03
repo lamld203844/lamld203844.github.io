@@ -1,140 +1,323 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="description" content="study HTML"/>
-    <meta name="Author" content="Alex Luu"/>
-    <meta name="Country" content="Viet Nam"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
     <title>Luu Duc Lam</title>
-    <link rel="stylesheet" href="style.css"/>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="intro">
-        <div class="profile">
-          <div class="photo">
-            <img src="avt2021.jpg">
-          </div>
-          <div class="bio">
-            <h1 class="name">Lưu Đức Lâm</h1>
-            <p class="profession">Student</p>
-          </div>
-        </div>
-        <div class="intro-section about">
-          <h1 class="title">about me</h1>
-          <p class="paragraph">
-            Hi everyone, I am a student from HUST and my major is Biomedical Engineering. 
-          </p>
-        </div>
-        <div class="intro-section contact">
-          <h1 class="title">Contact</h1>
-          <div class="info-section">
-            <i class="fas fa-phone"></i>
-            <span>0397447027</span>
-          </div>
-          <div class="info-section">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Hai Phong, Viet Nam</span>
-          </div>
-          <div class="info-section">
-            <i class="fas fa-paper-plane"></i>
-            <span>lam.ld203844@sis.hust.edu.vn</span>
-          </div>
-          <div class="info-section link">
-            <i class="fab fa-facebook"></i>
-            <a target="_blank" rel="author" href="https://www.facebook.com/maniblack247">
-              <span>Facebook: https://www.facebook.com/maniblack247</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="detail">
-        <div class="detail-section edu">
-          <div class="detail-title">
-            <div class="title-icon">
-              <i class="fas fa-user-graduate"></i>
-            </div>
-            <span>Education</span>
-          </div>
-          <div class="detail-content">
-            <div class="timeline-block">
-              <h1>School of Electronic and Telecommunication</h1>
-              <p>Hanoi University of Science and Technology</p>
-              <time>2020 - present</time>
-            </div>
-            <div class="timeline-block">
-              <h1>Tien Lang High School</h1>
-              <p>Tien Lang, Hai Phong</p>
-              <time>2017 - 2020</time>
-            </div>
-          </div>
-        </div>
-        <div class="detail-section pg-skill">
-          <div class="detail-title">
-            <div class="title-icon">
-              <i class="fas fa-laptop-code"></i>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-          </div>
-            <span>Have a taste of </span>
-          </div>
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-          <div class="detail-content">
-            <ul class="pg-list">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 
-              <li>
-                <span>Py/Django</span>
-                <div class="sb-skeleton">
-                  <div class="skillbar" style="--pgbar-length: 80%"></div>
-                </div>
-              </li>
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
 
-              <li>
-                <span>C/C++</span>
-                <div class="sb-skeleton">
-                  <div class="skillbar" style="--pgbar-length: 40%"></div>
-                </div>
-              </li>
 
-              <li>
-                <span>HTML/CSS</span>
-                <div class="sb-skeleton">
-                  <div class="skillbar" style="--pgbar-length: 50%"></div>
-                </div>
-              </li>
+</head>
 
-              <li>
-                <span>JS</span>
-                <div class="sb-skeleton">
-                  <div class="skillbar" style="--pgbar-length: 50%"></div>
-                </div>
-              </li>
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
             </ul>
-          </div>
-        </div>
-        <div class="detail-section interests">
-          <div class="detail-title">
-            <div class="title-icon">
-              <i class="fas fa-heart"></i>
+        </nav>
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>Hi There</h3>
+
+                <h1>
+                    I am Luu Duc Lam. <br>
+                    A student from Hanoi University
+                    of Science and Technology (HUST).
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        More About Me
+                    </a>
+                </div>
+
+                <div class="home-content__scroll">
+                    <a href="#about" class="scroll-link smoothscroll">
+                        <span>Scroll Down</span>
+                    </a>
+                </div>
+
             </div>
-            <span>Interests</span>
-          </div>
-          <div class="detail-content">
-            <div class="outer-frame">
-              <ul class="favor-list">
-                <li>
-                  <i class="fas fa-gamepad"></i>
-                  <span>IomT</span>
-                </li>
-                <li>
-                  <i class="fas fa-paw"></i>
-                  <span>Bioinformatic</span>
-                </li>
-              </ul>
+
+        </div> <!-- end home-content -->
+
+        <ul class="home-social">
+            <li>
+                <a target="_blank" href="https://www.facebook.com/maniblack247/"><i class="im im-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/l%C3%A2m-l%C6%B0u-%C4%91%E1%BB%A9c-b5735b242/"><i class="im im-linkedin" aria-hidden="true"></i><span>Linkedin</span></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://github.com/lamld203844"><i class="im im-github" aria-hidden="true"></i><span>Github</span></a>
+            </li>
+        </ul> 
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+        
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full text-center">
+                <h3>About</h3>
+                <h1>More About Me</h1>
+                <p class="lead">"Everything is the means to have happiness" <br> That is my favorite quote.</p>
             </div>
-          </div>
         </div>
-      </div>
+
+        <div class="row about-content">
+
+            <div class="col-six tab-full left">
+                <h3>Education</h3>
+                <div class="timeline">
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">2020 - Present</p>
+                            <h3>Hanoi University of Science and Technology (HUST)</h3>
+                            <h4>School of Electrical and Electronic Engineering (SEEE)</h4>
+                            <h5>Major: Biomedical Engineering</h5>
+                        </div>
+                        <div class="timeline__desc">
+                            <p>Class: Biomedical Engineering 01 K65</p>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                </div> <!-- end timeline -->
+                
+                <h3>Interests</h3>
+                <ul>
+                    <li>Computer vision/ Biomedical image processing</li>
+                    <li>Bioinformatics</li>
+                </ul>
+            </div>
+
+            <div class="col-six tab-full right">
+                <h3>I've Got Some skills.</h3>
+
+                <ul class="skill-bars">
+                    <li>
+                    <div class="progress percent80"><span>80%</span></div>
+                    <strong>Machine learning</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent70  "><span>70%</span></div>
+                    <strong>Research</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent60"><span>60%</span></div>
+                    <strong>Team work</strong>
+                    </li>
+                </ul>
+
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Lightning AI: Deep learning fundamentals</li> 
+                    <li>Kaggle
+                        <ul>
+                            <li>Intermediate Machine Learning</li>
+                            <li>Data visualization</li>
+                            <li>Data cleaning</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div> <!-- end about-content -->
+
+        <div class="row about-content about-content--timeline">
+
+            <div class="col-full text-center">
+                <h3>Experience and publication</h3>
+            </div>
+
+            <div class="col-six tab-full left">
+                <div class="timeline">
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe"> Mar. 2023 - Nov. 2023</p>
+                            <h3><a href="https://emglab.vn/" target="_blank">EMGlabvn</a></h3>
+                            <h5>Researcher</h5>
+                        </div>
+                        <div class="timeline__desc">
+                            <p>
+                                Research Data science and apply to predict pharmaceutical consumption
+                                data 
+                            </p>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                </div> <!-- end timeline -->
+            </div> <!-- end left -->
+
+            <div class="col-six tab-full right">
+                <ul>
+                    <li>
+                        Phan Kien Nguyen, Vu Tran Anh, Dat Do Tien, Hai Tran Tuan, Ha
+                        Pham Thanh, <strong>Lam Luu Duc</strong>, Huong Pham Thi Viet, & Cuong Nguyen
+                        Manh (2023). <strong>Multiple data recording system for boxing punch
+                            evaluation.</strong> (ICCAIS'23) (accepted) 
+                    </li> 
+                    <br>
+                    <li>
+                        <b>Luu Duc Lam</b>, Bui Phung Le Luong, Hoang Thi Mai Linh, & Pham
+                        Manh Hung (2023). <b>Application of machine learning in predicting the
+                            amount of pharmaceutical drugs ordered for the manufacturer</b>
+                        (ICHST'23) (accepted)
+                    </li>
+                </ul>
+
+            </div> <!-- end right -->
+
+        </div> <!-- end about-content timeline -->
+
+    </section> <!-- end about -->
+    
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="col-full">
+
+                <ul class="footer-social">
+                    <li><a href="https://www.facebook.com/maniblack247/" target="_blank">
+                        <i class="im im-facebook" aria-hidden="true"></i>
+                        <span>Facebook</span>
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/in/l%C3%A2m-l%C6%B0u-%C4%91%E1%BB%A9c-b5735b242/" target="_blank">
+                        <i class="im im-linkedin" aria-hidden="true"></i>
+                        <span>Linkedin</span>
+                    </a></li>
+                    <li><a href="https://github.com/lamld203844">
+                        <i class="im im-github" aria-hidden="true"></i>
+                        <span>Github</span>
+                    </a></li>
+                </ul>
+                    
+            </div>
+        </div>
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright 2023</span> 
+                    <span>Redesign by Ryan Liu (me)</span>	
+                </div>
+
+                <div class="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- end photoSwipe background -->
+
+    <div id="preloader">
+        <div id="loader"></div>
     </div>
-  </body>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>
